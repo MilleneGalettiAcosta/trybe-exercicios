@@ -135,3 +135,31 @@ if(custoProduto <= 0 || valorVenda <= 0) {
     console.log(lucro*1000);
 }
 // EXercicio 11
+let inss; 
+let impostoRenda;
+let salarioBruto = 3000.00;
+
+if(salarioBruto <= 1556.94) {
+      console.log(inss=salarioBruto*0.08);
+} else if (salarioBruto <= 2594.92){
+  console.log(inss=salarioBruto*0.09);
+} else if (salarioBruto <= 5189.92) {
+  console.log(inss = salarioBruto*0.11)
+} else {
+    console.log(inss=570.88)
+};
+
+console.log(salarioBase = salarioBruto - inss);
+
+if(salarioBase <=2826.65) {
+    console.log(impostoRenda = salarioBase*0.075-142.80);
+} else if(salarioBase <= 3751.05) {
+    console.log(impostoRenda = salarioBase*0.15-354,80);
+} else if(salarioBase <= 4664.68) {
+    console.log(impostoRenda = salarioBase*0.225-636,13);
+} else if(salarioBase > 4664.68) {
+    console.log(impostoRenda = salarioBase*0.275-869.36);
+} else {
+    console.log(impostoRenda = 0.00);
+};
+console.log(salarioLiquido = salarioBase -impostoRenda);
