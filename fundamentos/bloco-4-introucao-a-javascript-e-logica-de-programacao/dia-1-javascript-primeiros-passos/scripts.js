@@ -84,3 +84,24 @@ if(a%2||b%2||c%2) {
     console.log(false);
 }
 
+// Bônus 8
+let par = false
+if(a%2||b%2||c%2) {
+    par = true;
+};
+console.log(par)
+
+// Exercicio 9
+if(a%2 !== 0||b%2 !== 0||c%2 !== 0) {
+    console.log(true);
+} else {
+    console.log(false)
+}
+
+// Bônus 9
+let impar = false
+if(a%2 !==0||b%2 !==0||c%2 !==0) {
+    impar = true;
+};
+console.log(impar);
+
