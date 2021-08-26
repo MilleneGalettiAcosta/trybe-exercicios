@@ -35,3 +35,18 @@ for(let index =1; index < numbers.length;index +=1){
 console.log(maior);
 
 // Exercicio 6
+let numeroImpar= 0;
+
+for(let index =0; index < numbers.length; index +=1){
+if(numbers[index] % 2 !== 0){
+    numeroImpar += 1;
+     }
+}
+
+ if(numeroImpar===0){
+     console.log("nenhum valor ímpar encontrado");
+ } else {
+     console.log(numeroImpar);
+ }
+
+// Exercicio 7
