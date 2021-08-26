@@ -50,3 +50,12 @@ if(numbers[index] % 2 !== 0){
  }
 
 // Exercicio 7
+let menor = numbers[0]
+for(let index =1; index < numbers.length;index +=1){
+     if(numbers[index] < menor) {
+         menor = numbers[index];
+     }
+}
+console.log(menor);
+
+// Exercicio 8
