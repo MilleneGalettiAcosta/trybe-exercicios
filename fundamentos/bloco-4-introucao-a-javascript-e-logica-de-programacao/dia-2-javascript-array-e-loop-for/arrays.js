@@ -26,3 +26,12 @@ if(mediaAritmetica > 20) {
 }
 
 //Exercicio 5
+let maior = numbers[0]
+for(let index =1; index < numbers.length;index +=1){
+     if(numbers[index] > maior) {
+         maior = numbers[index];
+     }
+}
+console.log(maior);
+
+// Exercicio 6
