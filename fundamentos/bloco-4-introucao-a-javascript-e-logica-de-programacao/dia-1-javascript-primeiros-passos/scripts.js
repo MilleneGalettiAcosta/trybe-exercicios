@@ -77,3 +77,10 @@ switch(notaDoAluno) {
         default:
             console.log("error");
 }
+// Exercicio 8
+if(a%2||b%2||c%2) {
+    console.log(true);
+} else {
+    console.log(false);
+}
+
