@@ -45,7 +45,22 @@ if(angulo1+angulo2+angulo3 === 180) {
     console.log(false)
 }
 // Exercicio 6
+const pecaXadrez = 'bispo';
 
+switch (pecaXadrez.toLowerCase()) {
+  case 'rei':
+    console.log('Rei-> Uma casa apenas para qualquer direção.');
+    break;
+  case 'bispo':
+    console.log('Bispo-> Diagonal.');
+    break;
+  case 'rainha':
+    console.log('Rainha-> Diagonal, horizontal e vertical.');
+    break;
+  default:
+    console.log('Erro, peça inválida!');
+    break;
+};
 // Exercicio 7
 const notaDoAluno = 10;
 
@@ -110,11 +125,13 @@ const custoProduto = 156;
 const valorVenda = 439;
 
 let imposto = 20*custoProduto/100;
+// custoProduto*1.2 - diminuiria uma variavel
 const custoTotal = custoProduto + imposto;
 let lucro = valorVenda - custoTotal;
 
-if(custoProduto < 0 || valorVenda < 0) {
+if(custoProduto <= 0 || valorVenda <= 0) {
     console.log("Erro");
 } else {
-    console.log(lucro);
+    console.log(lucro*1000);
 }
+// EXercicio 11
