@@ -10,3 +10,12 @@ for(let index =0;index <numbers.length; index +=1) {
     soma += numbers[index];
 }
 console.log(soma);
+
+// Exercicio 3
+let mediaAritmetica = 0;
+for(let index =0;index <numbers.length; index +=1) {
+    mediaAritmetica += numbers[index]/numbers.length;
+}
+console.log(mediaAritmetica);
+
+// Exercicio 4
