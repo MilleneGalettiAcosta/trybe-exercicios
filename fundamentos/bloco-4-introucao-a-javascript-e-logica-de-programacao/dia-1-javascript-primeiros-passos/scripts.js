@@ -44,3 +44,36 @@ if(angulo1+angulo2+angulo3 === 180) {
 } else {
     console.log(false)
 }
+// Exercicio 6
+
+// Exercicio 7
+const notaDoAluno = 10;
+
+switch(notaDoAluno) {
+    case notaDoAluno >= 90:
+        console.log("A");
+        break;
+
+    case notaDoAluno >= 80:
+        console.log("B");
+        break;
+
+    case notaDoAluno >= 70:
+        console.log("C");
+        break;
+
+    case notaDoAluno >= 60:
+        console.log("D");
+        break;
+
+    case notaDoAluno >= 50:
+        console.log("E");
+        break;
+
+    case notaDoAluno < 50:
+        console.log("F");
+        break;
+
+        default:
+            console.log("error");
+}
