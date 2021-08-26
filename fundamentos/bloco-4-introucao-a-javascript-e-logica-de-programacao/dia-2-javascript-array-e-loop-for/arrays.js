@@ -19,3 +19,10 @@ for(let index =0;index <numbers.length; index +=1) {
 console.log(mediaAritmetica);
 
 // Exercicio 4
+if(mediaAritmetica > 20) {
+    console.log("valor maior que 20");
+} else {
+    console.log("valor menor ou igual a 20");
+}
+
+//Exercicio 5
