@@ -23,3 +23,13 @@ if(a>b && a>c) {
 } else {
     console.log("C é o maior")
 }
+
+const valor = 60;
+
+if(valor=== 60) {
+    console.log("positive");
+} else if(valor === 0) {
+    console.log("zero");
+} else {
+    console.log("negative")
+}
