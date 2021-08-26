@@ -105,3 +105,16 @@ if(a%2 !==0||b%2 !==0||c%2 !==0) {
 };
 console.log(impar);
 
+// Exercicio 10
+const custoProduto = 156;
+const valorVenda = 439;
+
+let imposto = 20*custoProduto/100;
+const custoTotal = custoProduto + imposto;
+let lucro = valorVenda - custoTotal;
+
+if(custoProduto < 0 || valorVenda < 0) {
+    console.log("Erro");
+} else {
+    console.log(lucro);
+}
