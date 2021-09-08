@@ -114,19 +114,29 @@
     elementsH3.innerHTML = 'Subtítulos ' + index;
     main.appendChild(elementsH3);
     }
+
     // Part 2
     // 1. Adicione a classe title na tag h1 criada
-title.className = 'title';
-    // 2. Adicione a classe description nas 3 tags h3 criadas
+    title.className = 'title';
 
+    // 2. Adicione a classe description nas 3 tags h3 criadas
+    let h3 = document.getElementsByTagName('h3');
+    for(let index = 0; index < 3; index += 1){
+        h3[index].className = 'description';
+    }
+    
     // 3.Remova a section criado no passo 5. Utilize a função .removeChild()
+    main.removeChild(sectionleft);
 
     // 4. Centralize a section criado no passo 6. Dica: configurar o margin-rigth : auto da section
+    sectionright.style.marginRight = 'auto';
 
     // 5. Troque a cor de fundo do elemento pai da section criada no passo 3 para cor verde
+    main.style.backgroundColor = 'green';
 
     // 6. Remova dois últimos elementos da lista criada no passo 8.
-
+    list.lastChild.remove();
+    list.lastChild.remove();
 
     </script>
   </body>
