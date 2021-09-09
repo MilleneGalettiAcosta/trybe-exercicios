@@ -12,14 +12,34 @@ function createDaysOfTheWeek() {
   };
   
   createDaysOfTheWeek();
+
   
 //   1- Desenvolva uma função que crie dinamicamente cada dia do calendário e os adicione como filho da tag <ul> com ID 'days'.
 // os dias devem estar contidos em uma tag <li> e todos devem ter a classe day.
 // os dias 24,25 e 31 são feriados e , além da classe day, devem conter também a classe holiday.
 // os dias 4,11,18 e 25 são sexta feira. Eles devem conter a classe day e a classe friday.
 
-const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];;
+function createDaysOfTheCalendary(){
+    const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];;
+    let ulDays = document.querySelector('#days');
 
+    for(let index = 0; index < dezDaysList.length; index += 1){
+        let daysLi = dezDaysList[index];
+        let liDays = document.createElement('li');
+        liDays.innerHTML = daysLi;
+        liDays.className = 'day';  
+
+        ulDays.appendChild(liDays);
+
+        if(daysLi === 24 || daysLi=== 25 || daysLi === 31){
+            liDays.classList.add('holiday');
+        }
+        if (daysLi === 4 || daysLi === 11 || daysLi === 18 || daysLi === 25){
+            liDays.classList.add('friday');
+        }
+    };
+};
+createDaysOfTheCalendary();
 
 // 2- Implemente uma função que receba como parâmetro a string "Feriados" e crie dinamicamente um botão com o nome "Feriados".
 // Adicione a este botão a ID "btn-holiday" .
