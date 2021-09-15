@@ -10,22 +10,31 @@
 <form action="" method="GET" enctype="multipart/form-data">
   <fieldset>
     <legend>Dados Pessoais</legend>
-    Nome:<input type="text" name="personal-data"  id="username" required maxlength="40">
-    Email:<input type="text" name="personal-data" id="email" required maxlength="50">
-    CPF:<input type="text" name="personal-data" id="cpf" required maxlength="11">
-    Endereço:<input type="text" name="personal-data" id="adress" required maxlength="200">
-    Cidade:<input type="text" name="personal-data" id="city" required maxlength="28">
-    <select name="personal-data" id="dropdown-state"></select>
-    <input type="radio" id="casa" name="local" value="casa" required>Casa
-    <input type="radio" id="apto" name="local" value="apto" required>Apartamento
+    <label for="username">Nome:</label>
+    <input type="text" name="personal-data"  id="username" required maxlength="40">
+   <label for="email">Email:</label>
+   <input type="text" name="personal-data" id="email" required maxlength="50">
+    <label for="cpf">CPF:</label>
+    <input type="text" name="personal-data" id="cpf" required maxlength="11">
+    <label for="adress">Endereço:</label>
+    <input type="text" name="personal-data" id="adress" required maxlength="200">
+    <label for="city">Cidade:</label>
+    <input type="text" name="personal-data" id="city" required maxlength="28">
+    <select name="personal-data" id="dropdown-state">  
+    </select>
+    <label for="casa">Casa</label><input type="radio" id="casa" name="local" value="casa" required>
+    <label for="apto">Apartamento</label><input type="radio" id="apto" name="local" value="apto" required>
   </fieldset>
   <div class="clear">
   <fieldset>
     <legend>Dados último emprego</legend>
-    <textarea name="last-jobs" id="textarea-curriculum" maxlength="1000"></textarea>
-    Cargo:<input type="text" name="last-jobs" id="cargo" required maxlength="40">
-    Descrição do cargo: <input type="text" name="last-jobs" id="description-job" required maxlength="500">
-    Data de Início: <input type="date" name= "last-jobs" id="date" required>
+    <textarea name="last-jobs" rows="15" cols="90" id="textarea-curriculum" maxlength="1000">Curriculum</textarea>
+    <label for="cargo">Cargo:</label>
+    <input type="text" name="last-jobs" id="cargo" required maxlength="40">
+    <label for="description-job">Descrição do cargo:</label>
+    <input type="text" name="last-jobs" id="description-job" required maxlength="500">
+   <label for="date"> Data de Início:</label>
+   <input type="date" name= "last-jobs" id="date" required>
   </fieldset>
 </div>
 </form>
