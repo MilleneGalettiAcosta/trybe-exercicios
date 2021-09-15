@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+<body>
+<form action="" method="GET" enctype="multipart/form-data">
+  <fieldset>
+    <legend>Dados Pessoais</legend>
+    Nome:<input type="text" name="personal-data"  id="username" required maxlength="40">
+    Email:<input type="text" name="personal-data" id="email" required maxlength="50">
+    CPF:<input type="text" name="personal-data" id="cpf" required maxlength="11">
+    Endereço:<input type="text" name="personal-data" id="adress" required maxlength="200">
+    Cidade:<input type="text" name="personal-data" id="city" required maxlength="28">
+    <select name="personal-data" id="dropdown-state"></select>
+    <input type="radio" id="casa" name="local" value="casa" required>Casa
+    <input type="radio" id="apto" name="local" value="apto" required>Apartamento
+  </fieldset>
+  <div class="clear">
+  <fieldset>
+    <legend>Dados último emprego</legend>
+    <textarea name="last-jobs" id="textarea-curriculum" maxlength="1000"></textarea>
+    Cargo:<input type="text" name="last-jobs" id="cargo" required maxlength="40">
+    Descrição do cargo: <input type="text" name="last-jobs" id="description-job" required maxlength="500">
+    Data de Início: <input type="date" name= "last-jobs" id="date" required>
+  </fieldset>
+</div>
+</form>
+<button>Limpar</button>
+ <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
