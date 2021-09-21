@@ -18,6 +18,7 @@ O que fazer com as informações do autor em cada tamanho de tela?
 
  .container {
   display:flex;
+  flex-direction: column;
 } 
 
 p {
@@ -27,12 +28,9 @@ p {
 /* Mobile */
 @media screen and (max-width: 600px) {
   body {
+    padding: 5px;
     background-color: aquamarine;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-  }
-
-  .container {
-    flex-direction: column;
   }
 
   .container header p {
@@ -47,6 +45,7 @@ p {
   p {
     padding: 0 5px;
     line-height: 1.2em;
+    margin-left: 10px;
   }
 
   h1, h2 {
@@ -60,18 +59,44 @@ p {
     font-family: cursive;
   }
 
-  .container {
-    flex-wrap: wrap;
-  }
   .container header p {
     font-size: 2em;
   }
 
   p {
     line-height: 1.5em;
+    margin-left: 10px;
   }
 
   h1, h2 {
     padding: 15px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    background-color: rgb(169, 169, 243);
+  }
+
+  .container {
+    flex-wrap: nowrap;
+  }
+
+  .container header p {
+    font-size: 2.5em;
+  }
+
+  p {
+    line-height: 1.5em;
+    max-width: 95%;
+    margin-left: 20px;
+  }
+
+  h1, h2 {
+    padding: 15px;
+    margin-left: 15px;
   }
 }
