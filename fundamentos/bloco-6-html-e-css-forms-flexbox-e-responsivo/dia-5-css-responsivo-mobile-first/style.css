@@ -29,11 +29,6 @@ body {
     font-size: 14px;
   }
   
-  @media (max-width:500px) and (min-width:0) {
-      p.trick {
-          display:block
-      }
-  }
   p strong {
     font-weight: 700;
   }
@@ -93,5 +88,11 @@ body {
 @media (min-width:950px) {
     .card:nth-of-type(3) {
         display: block;
+    }
+}
+
+@media (max-width:500px) {
+    p.trick {
+        color: black;
     }
 }
