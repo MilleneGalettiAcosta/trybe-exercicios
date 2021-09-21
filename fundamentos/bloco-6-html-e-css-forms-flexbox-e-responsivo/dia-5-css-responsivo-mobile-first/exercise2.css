@@ -48,8 +48,30 @@ p {
     padding: 0 5px;
     line-height: 1.2em;
   }
+
   h1, h2 {
     padding: 10px;
   }
 }
 
+@media screen and (min-width:600px) {
+  body {
+    background-color: bisque;
+    font-family: cursive;
+  }
+
+  .container {
+    flex-wrap: wrap;
+  }
+  .container header p {
+    font-size: 2em;
+  }
+
+  p {
+    line-height: 1.5em;
+  }
+
+  h1, h2 {
+    padding: 15px;
+  }
+}
