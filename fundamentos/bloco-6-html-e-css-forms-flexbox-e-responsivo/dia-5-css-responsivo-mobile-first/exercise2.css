@@ -1,0 +1,102 @@
+/* padroniza tela */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /* Realize as seguintes tarefas:
+1 - Utilizando a abordagem mobile first e media queries , crie três versões de layout diferentes para essa página . Cada layout deve corresponder a um tamanho diferente de página (pequeno, médio e grande) . Faça pelo menos um commit para cada layout ;
+2 - Para fazer isso de forma adequada, você deve prestar atenção no conteúdo da página e pensar em como mostrá-lo em cada um dos tamanhos de tela:
+Onde a lista de capítulos deve estar posicionada?
+Como a história deve ser mostrada?
+Como o cabeçalho deve ser posicionado?
+O que fazer com as informações do autor em cada tamanho de tela?
+3 - Talvez você precise alterar o HTML um pouco, adicionando elementos para facilitar a estilização, ou talvez mudando um bloco de lugar dentro da página. */
+
+
+ .container {
+  display:flex;
+  flex-direction: column;
+} 
+
+p {
+  padding: 20px;
+} 
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 5px;
+    background-color: aquamarine;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  }
+
+  .container header p {
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+  }
+  .container nav ul li {
+    display:none;
+  }
+  
+  p {
+    padding: 0 5px;
+    line-height: 1.2em;
+    margin-left: 10px;
+  }
+
+  h1, h2 {
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width:600px) {
+  body {
+    background-color: bisque;
+    font-family: cursive;
+  }
+
+  .container header p {
+    font-size: 2em;
+  }
+
+  p {
+    line-height: 1.5em;
+    margin-left: 10px;
+  }
+
+  h1, h2 {
+    padding: 15px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    background-color: rgb(169, 169, 243);
+  }
+
+  .container {
+    flex-wrap: nowrap;
+  }
+
+  .container header p {
+    font-size: 2.5em;
+  }
+
+  p {
+    line-height: 1.5em;
+    max-width: 95%;
+    margin-left: 20px;
+  }
+
+  h1, h2 {
+    padding: 15px;
+    margin-left: 15px;
+  }
+}
