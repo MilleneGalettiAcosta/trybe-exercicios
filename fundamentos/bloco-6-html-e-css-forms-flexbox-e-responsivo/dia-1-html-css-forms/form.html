@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+<body>
+<form action="" method="GET" enctype="multipart/form-data">
+  <fieldset>
+    <legend>Dados Pessoais</legend>
+    <label for="username">Nome:</label>
+    <input type="text" name="personal-data"  id="username" required maxlength="40">
+   <label for="email">Email:</label>
+   <input type="text" name="personal-data" id="email" required maxlength="50">
+    <label for="cpf">CPF:</label>
+    <input type="text" name="personal-data" id="cpf" required maxlength="11">
+    <label for="adress">Endereço:</label>
+    <input type="text" name="personal-data" id="adress" required maxlength="200">
+    <label for="city">Cidade:</label>
+    <input type="text" name="personal-data" id="city" required maxlength="28">
+    <select name="personal-data" id="dropdown-state">  
+    </select>
+    <label for="casa">Casa</label><input type="radio" id="casa" name="local" value="casa" required>
+    <label for="apto">Apartamento</label><input type="radio" id="apto" name="local" value="apto" required>
+  </fieldset>
+  <div class="clear">
+  <fieldset>
+    <legend>Dados último emprego</legend>
+    <textarea name="last-jobs" rows="15" cols="90" id="textarea-curriculum" maxlength="1000">Curriculum</textarea>
+    <label for="cargo">Cargo:</label>
+    <input type="text" name="last-jobs" id="cargo" required maxlength="40">
+    <label for="description-job">Descrição do cargo:</label>
+    <input type="text" name="last-jobs" id="description-job" required maxlength="500">
+   <label for="date"> Data de Início:</label>
+   <input type="date" name= "last-jobs" id="date" required>
+  </fieldset>
+</div>
+</form>
+<button>Limpar</button>
+ <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
