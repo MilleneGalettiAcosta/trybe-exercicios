@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+<body>
+<header class = 'form-header'>
+  <h1>Formulário para cadastro de currículo</h1>
+  <p>Preencha os campos abaixo.</p>
+</header>
+<main>
+  <form  id='cv-form' action="" method="GET" enctype="multipart/form-data">
+    <div class="form-row">
+  <fieldset>
+    <div class="personal-data">
+    <legend>Dados Pessoais</legend>
+    <label for="username">Nome:</label>
+    <input type="text" name="name"  id="username" required maxlength="40">
+  </div>
+  <div class="personal-data">
+   <label for="email">Email:</label>
+   <input type="text" name="email" id="email" required maxlength="50">
+  </div>
+  <div class="personal-data">
+    <label for="cpf">CPF:</label>
+    <input type="text" name="cpf" id="cpf" required maxlength="11">
+  </div>
+  <div class="personal-data">
+    <label for="adress">Endereço:</label>
+    <input type="text" name="adress" id="adress" required maxlength="200">
+  </div>
+  <div class="personal-data">
+    <label for="city">Cidade:</label>
+    <input type="text" name="city" id="city" required maxlength="28">
+    </div>
+    <div class="personal-data">
+    <label for="state">Estado:</label>
+    <select name="state" id="state" required>  
+      <option  disable selected value>Selecione seu estado</option>
+    </select>
+  </div>
+  <div class="personal-data">
+    <label for="local">Tipo de imóvel:</label>
+    <label for="casa">Casa</label>
+    <input type="radio" id="casa" name="local" value="casa" required>
+    <label for="apto">Apartamento</label>
+    <input type="radio" id="apto" name="local" value="apto" required>
+  </div>
+  </fieldset>
+  <fieldset>
+    <div class="personal-data">
+    <legend>Resumo do currículo:</legend>
+    <textarea name="last-jobs" rows="15" cols="90" id="textarea-curriculum" maxlength="1000">Curriculum</textarea>
+  </div>
+  <div class="personal-data">
+    <label for="cargo">Cargo:</label>
+    <input type="text" name="last-jobs" id="cargo" required maxlength="40">
+  </div>
+  <div class="personal-data">
+    <label for="description-job">Descrição do cargo:</label>
+    <input type="text" name="last-jobs" id="description-job" required maxlength="500">
+  </div>
+    <div class="personal-data">
+   <label for="date"> Data de Início:</label>
+   <input type="date" name= "last-jobs" id="date" required>
+  </div>
+  </fieldset>
+  <button class="submit-btn" type="submit">Enviar</button>
+  <button class="clear-btn" type="button">Limpar</button>
+</div>
+</form>
+</main>
+<section class="'form-data"></section>
+ <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
