@@ -9,5 +9,5 @@ test('sums two values', () => {
 });
 
 test('sums two values', () => {
-  expect(sum(4, '5')).toBe(9);
+  expect( () => sum(4, '5')).toThrowError(new Error('parameters must be numbers'));
 });
