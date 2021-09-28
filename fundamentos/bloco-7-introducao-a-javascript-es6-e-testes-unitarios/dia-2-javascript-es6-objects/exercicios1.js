@@ -50,3 +50,5 @@ const order = {
   }
   
   orderModifier(order);
+
+//   pode colocar os valores dos objetos dentro de const e ai posicionar no console log. para ficar mais curto o console.log.
