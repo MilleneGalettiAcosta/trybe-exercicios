@@ -27,3 +27,10 @@ let modifedObject = (objeto, chave, valor) => {
 
 console.log(modifedObject(lesson2, 'turno', 'noite'));
 
+// Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
+
+const keysObject = (objeto) => console.log(Object.keys(objeto));
+
+keysObject(lesson2);
+
+
