@@ -73,13 +73,17 @@ console.log(damageMage(mage));
 // Agora que você já possui a implementação das funções relativas aos três exercícios anteriores, passe-as como parâmetro para outras funções que irão compor um objeto gameActions . O objeto será composto por ações do jogo e cada ação é por denifição uma HOF , pois neste caso, são funções que recebem como parâmetro outra função.
 
 const gameActions = {
+ // 1 - Crie a primeira HOF que compõe o objeto gameActions . Ela será a função que simula o turno do personagem warrior . Esta HOF receberá como parâmetro a função que calcula o dano deferido pelo personagem warrior e atualizará os healthPoints do monstro dragon . Além disto ela também deve atualizar o valor da chave damage do warrior .
+
 turnWarrior: (damageWarrior) => {
   const damageW = damageWarrior(warrior);
   warrior.damage = damageW;
   const result = dragon.healthPoints - damageW;
   return result;
   },
+
   // 2 - Crie a segunda HOF que compõe o objeto gameActions . Ela será a função que simula o turno do personagem mage . Esta HOF receberá como parâmetro a função que calcula o dano deferido pelo personagem mage e atualizará os healthPoints do monstro dragon . Além disto ela também deve atualizar o valor das chaves damage e mana do mage.
+
   turnMage: (damageMage) => {
   const mageInfo = damageMage(mage);
   const damageM = mageInfo.damageDealt;
@@ -89,7 +93,20 @@ turnWarrior: (damageWarrior) => {
   const result = dragon.healthPoints - damageM;
   return result;
   },
+
+//   3 - Crie a terceira HOF que compõe o objeto gameActions . Ela será a função que simula o turno do monstro dragon . Esta HOF receberá como parâmetro a função que calcula o dano deferido pelo monstro dragon e atualizará os healthPoints dos personagens mage e warrior . Além disto ela também deve atualizar o valor da chave damage do monstro.
+
+turnDragon: (damageDragon) => {
+  const damageD = damageDragon(dragon);
+  dragon.damage = damageD;
+  const healthWarrior = warrior.healthPoints - damageD;
+  const healthMage = mage.healthPoints - damageD;
+  return `Vida do guerreiro: ${healthWarrior} e vida do mago: ${healthMage}`;
+  },
+  turnResult: () => battleMembers,
 };
 
 console.log(gameActions.turnWarrior(damageWarrior));
 console.log(gameActions.turnMage(damageMage));
+console.log(gameActions.turnDragon(damageDragon));
+console.log(gameActions.turnResult());
