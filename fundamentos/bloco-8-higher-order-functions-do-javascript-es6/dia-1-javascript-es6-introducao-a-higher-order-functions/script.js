@@ -73,3 +73,5 @@ const hof = (RIGHT_ANSWERS, STUDENT_ANSWERS, correctAnswer) => {
     return `Resultado final: ${result} corretas`;
 };
 console.log(hof(RIGHT_ANSWERS, STUDENT_ANSWERS,correctAnswer));
+
+// Bônus
