@@ -103,6 +103,8 @@ turnDragon: (damageDragon) => {
   const healthMage = mage.healthPoints - damageD;
   return `Vida do guerreiro: ${healthWarrior} e vida do mago: ${healthMage}`;
   },
+  
+//   4 - Adicione ao objeto gameActions uma função que retorne o objeto battleMembers atualizado e faça um console.log para visualizar o resultado final do turno.
   turnResult: () => battleMembers,
 };
 
