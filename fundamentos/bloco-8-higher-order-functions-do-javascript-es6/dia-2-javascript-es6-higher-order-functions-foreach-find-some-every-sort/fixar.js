@@ -68,13 +68,13 @@ const findDivisibleBy3And5 = (num) => {
 console.log(findDivisibleBy3And5(numbers));
 
 // 2 - Utilize o find para encontrar o primeiro nome com cinco letras, caso ele exista:
-const names = ['João', 'Irene', 'Fernando', 'Maria'];
+// const names = ['João', 'Irene', 'Fernando', 'Maria'];
 
-const findNameWithFiveLetters = (arr) => {
-  return arr.find((word) => word.length === 5);
-}
+// const findNameWithFiveLetters = (arr) => {
+//   return arr.find((word) => word.length === 5);
+// }
 
-console.log(findNameWithFiveLetters(names));
+// console.log(findNameWithFiveLetters(names));
 
 // 3 - Utilize o find para encontrar a música com id igual a 31031685 , caso ela exista:
 const musicas = [
@@ -88,3 +88,12 @@ function findMusic(id) {
 }
 
 console.log(findMusic('31031685'));
+
+// 1 - Escreva uma função que dado um array de nomes e um nome retorne true se ele estiver contido e caso contrário, retorne false , use some ;
+const names = ['Mateus', 'José', 'Ana', 'Cláudia', 'Bruna'];
+
+const hasName = (arr, name) => {
+  return arr.some((a) => a === name);
+}
+
+console.log(hasName(names, 'Ana'))
