@@ -63,17 +63,16 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
+// 7 - Faça uma função que retorne true , caso nenhum author tenha nascido no mesmo ano, e false , caso contrário.
+const expectedResult = false;
 
-// 6 - Faça uma função que retorne true , se algum livro foi lançado na década de 80, e false , caso contrário.
-const expectedResult = true;
-
-function someBookWasReleaseOnThe80s() {
-  return books.some((book) => (
-      book.releaseYear > 1980 && book.releaseYear <= 1989
-  ));
+function authorUnique() {
+  return books.every((book) =>
+   !books.some((bookSome) =>
+   (bookSome.author.birthYear === book.author.birthYear)
+   && (bookSome.author.name !== book.author.name)));
 }
 
-assert.strictEqual(someBookWasReleaseOnThe80s(), expectedResult);
+assert.strictEqual(authorUnique(), expectedResult);
 
-console.log(someBookWasReleaseOnThe80s(books));
+console.log(authorUnique(books));
