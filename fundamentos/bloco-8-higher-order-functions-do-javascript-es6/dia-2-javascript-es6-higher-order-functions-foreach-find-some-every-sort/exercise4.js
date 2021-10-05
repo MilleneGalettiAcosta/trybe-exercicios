@@ -63,6 +63,7 @@ const books = [
   },
 ];
 // Resultado esperado
+// 4 - Ordene os livros por data de lançamento em ordem decrescente.
 
 const expectedResult = [
     {
