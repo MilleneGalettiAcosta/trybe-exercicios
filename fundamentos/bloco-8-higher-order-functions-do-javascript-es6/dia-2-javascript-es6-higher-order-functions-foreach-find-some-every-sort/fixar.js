@@ -123,4 +123,3 @@ console.log(people);
 people.sort((personA, personB) => personB.age - personA.age);
 
 console.log(people);
-
