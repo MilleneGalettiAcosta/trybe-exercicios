@@ -77,5 +77,3 @@ const books = [
   }
 
   console.log(fantasyOrScienceFictionAuthors(books));
-
-/
