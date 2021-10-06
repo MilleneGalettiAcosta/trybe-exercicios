@@ -87,8 +87,8 @@ const books = [
   ];
   
   function oldBooksOrdered(books) {
-      const year = 2021;
-    return books.filter((book)=> (book.releaseYear < 2021 - 60)).sort((bookA, bookB) => bookA.releaseYear - bookB.releaseYear);
+      const currentYear = new Date().getFullYear();
+    return books.filter((book)=> (book.releaseYear < currentYear - 60)).sort((bookA, bookB) => bookA.releaseYear - bookB.releaseYear);
   }
-
+// https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Date/getFullYear
   console.log(oldBooksOrdered(books));
