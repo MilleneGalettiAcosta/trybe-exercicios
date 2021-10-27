@@ -21,4 +21,3 @@ describe('Ao acessar a API github', () => {
   expect(repositorio).toContain('sd-01-week4-5-project-todo-list');
     });
 });
-
