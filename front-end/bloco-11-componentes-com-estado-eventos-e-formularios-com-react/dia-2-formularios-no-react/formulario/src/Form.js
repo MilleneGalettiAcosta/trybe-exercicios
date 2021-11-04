@@ -28,6 +28,8 @@ class Form extends React.Component {
         <div className="form">
             <h1>Formulário Fixar</h1>
             <form className="form">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
                 <label htmlFor="email">Email:</label>
                 <input type='email' name='email' value={this.state.email} id='email'onChange={this.handleChange} />
                 <label htmlFor="password">Password:</label>
@@ -43,6 +45,7 @@ class Form extends React.Component {
                 value={this.state.textarea} 
                 onChange={this.handleChange}>Digite aqui
                 </textarea>
+                </fieldset>
                 {/* Referência: https://pt-br.reactjs.org/docs/forms.html*/}
                 <label htmlFor="select">Fruta favorita:</label>
                 <select id="select">
