@@ -10,12 +10,18 @@ class Form extends React.Component {
         email:'',
         password:'',
         textarea:'',
+        checkbox:false,
         };
     }
 
-    handleChange(event) {
-        this.setState({ email:event.target.value });
-    }
+    handleChange({ target }) {
+        const { name } = target;
+        const value = target.type === 'checkbox' ? target.checked : target.value;
+      
+        this.setState({
+          [name]: value,
+        });
+      }
 
   render() { 
     return (
@@ -45,6 +51,8 @@ class Form extends React.Component {
                 <option selected value="coco">Coco</option>
                 <option value="manga">Manga</option>
                 </select>
+                <label htmlFor="checkbox">Enviar noticias:</label>
+                <input type="checkbox" id="checkbox" value={this.state.checkbox} onChange={this.handleChange} />
             </form>
         </div>
     );
