@@ -1,4 +1,5 @@
 import React from 'react';
+import DataField from './DataField';
 
 class Form extends React.Component {
     constructor(props) {
@@ -24,29 +25,21 @@ class Form extends React.Component {
       }
 
   render() { 
+      const { email, password, textarea } = this.state;
     return (
-        <div className="form">
+        <div>
             <h1>Formulário Fixar</h1>
             <form className="form">
-                <fieldset>
-                    <legend>Dados Pessoais</legend>
-                <label htmlFor="email">Email:</label>
-                <input type='email' name='email' value={this.state.email} id='email'onChange={this.handleChange} />
-                <label htmlFor="password">Password:</label>
-                <input 
-                type='password' 
-                name='password' 
-                value={this.state.password} 
-                onChange={this.handleChange} 
-                />
-                <label htmlFor="textarea">Descrição:</label>
-                <textarea id="textarea" 
-                name="textarea" 
-                value={this.state.textarea} 
-                onChange={this.handleChange}>Digite aqui
-                </textarea>
-                </fieldset>
+
+            <DataField 
+            email={ email }
+            password={ password }
+            textarea={ textarea }
+            handleChange={ this.handleChange }
+            /> 
+
                 {/* Referência: https://pt-br.reactjs.org/docs/forms.html*/}
+
                 <label htmlFor="select">Fruta favorita:</label>
                 <select id="select">
                 <option value="laranja">Laranja</option>
@@ -54,8 +47,16 @@ class Form extends React.Component {
                 <option selected value="coco">Coco</option>
                 <option value="manga">Manga</option>
                 </select>
+
                 <label htmlFor="checkbox">Enviar noticias:</label>
-                <input type="checkbox" id="checkbox" value={this.state.checkbox} onChange={this.handleChange} />
+                <input 
+                type="checkbox" 
+                id="checkbox"
+                name="checkbox"
+                value={this.state.checkbox}
+                onChange={this.handleChange} 
+                />
+
                 <input type="file" />
             </form>
         </div>
