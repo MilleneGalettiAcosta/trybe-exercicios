@@ -53,6 +53,7 @@ class Form extends React.Component {
                 </select>
                 <label htmlFor="checkbox">Enviar noticias:</label>
                 <input type="checkbox" id="checkbox" value={this.state.checkbox} onChange={this.handleChange} />
+                <input type="file" />
             </form>
         </div>
     );
