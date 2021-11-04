@@ -12,7 +12,25 @@ class Form extends React.Component {
         password:'',
         textarea:'',
         checkbox:false,
+        formularioComErros: true,
         };
+    }
+
+    handleError() {
+        const { email, password, textarea, checkbox } = this.state;
+
+        const errorCases = [
+            !email.match(/^\S+@\S+$/i),
+            password.length < 6,
+            !textarea.length,
+            !checkbox,
+        ];
+
+        const formularioPreenchido = errorCases.every((error) => error !== true);
+
+        this.setState({
+            formularioComErros: !formularioPreenchido,
+        });
     }
 
     handleChange({ target }) {
@@ -25,7 +43,7 @@ class Form extends React.Component {
       }
 
   render() { 
-      const { email, password, textarea } = this.state;
+      const { email, password, textarea, formularioComErros } = this.state;
     return (
         <div>
             <h1>Formulário Fixar</h1>
@@ -59,6 +77,9 @@ class Form extends React.Component {
 
                 <input type="file" />
             </form>
+            { formularioComErros
+            ? <span style={ { color: 'red' } }>Preencha todos os campos</span>
+            : <span style={ { color: 'green' } }>Todos campos foram preenchidos</span> }
         </div>
     );
   }
