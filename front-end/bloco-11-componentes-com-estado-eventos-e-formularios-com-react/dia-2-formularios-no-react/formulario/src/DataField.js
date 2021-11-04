@@ -8,7 +8,7 @@ class DataField extends React.Component {
             <fieldset>
                     <legend>Dados Pessoais</legend>
 
-                <label htmlFor="email">Email:</label>
+                <label htmlFor="email">Email:
                 <input 
                 type='email' 
                 name='email' 
@@ -16,16 +16,20 @@ class DataField extends React.Component {
                 id='email'
                 onChange={ handleChange } 
                 />
+                {!email.match(/^\S+@\S+$/i) ? '-email inválido-' : ' -ok- '}
+                </label>
 
-                <label htmlFor="password">Password:</label>
+                <label htmlFor="password">Password:
                 <input 
                 type='password' 
                 name='password' 
                 value={ password } 
                 onChange={ handleChange } 
                 />
+                {password.length < 6 ? '-password inválido-' : ' -ok- '}
+                </label>
 
-                <label htmlFor="textarea">Descrição:</label>
+                <label htmlFor="textarea">Descrição:
                 <textarea 
                 id="textarea" 
                 name="textarea" 
@@ -33,6 +37,8 @@ class DataField extends React.Component {
                 onChange={ handleChange }
                 >Digite aqui
                 </textarea>
+                { !textarea.length ? ' -campo vazio- ': ' -ok- '}
+                </label>
                 </fieldset>
         );
     }
