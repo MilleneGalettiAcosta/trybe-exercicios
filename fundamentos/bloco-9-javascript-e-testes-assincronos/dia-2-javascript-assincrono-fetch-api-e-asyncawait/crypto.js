@@ -27,3 +27,5 @@ const setCoins = async () => {
 }
 
 window.onload = () => setCoins();
+
+// https://api.mercadolibre.com/sites/MLB/search?q=panela
