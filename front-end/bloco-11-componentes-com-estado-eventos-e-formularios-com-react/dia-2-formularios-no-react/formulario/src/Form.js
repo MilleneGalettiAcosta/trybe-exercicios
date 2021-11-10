@@ -77,6 +77,7 @@ class Form extends React.Component {
 
                 <input type="file" />
             </form>
+            
             { formularioComErros
             ? <span style={ { color: 'red' } }>Preencha todos os campos</span>
             : <span style={ { color: 'green' } }>Todos campos foram preenchidos</span> }
