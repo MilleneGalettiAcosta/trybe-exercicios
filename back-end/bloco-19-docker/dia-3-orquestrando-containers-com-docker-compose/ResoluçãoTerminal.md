@@ -16,3 +16,20 @@ docker run -d --name site-trybe2 -p 4545:80 -v "<CAMINHO DO DIRETÃ“RIO ONDE ESTÃ
 ```console
 docker ps
 ```
+
+## **Requisito 6**
+
+```console
+docker inspect site-trybe2
+```
+
+> "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/milene/docker/meu-site",
+                "Destination": "/usr/local/apache2/htdocs",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ]
