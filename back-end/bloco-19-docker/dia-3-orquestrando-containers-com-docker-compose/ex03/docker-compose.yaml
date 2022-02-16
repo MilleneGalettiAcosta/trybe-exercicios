@@ -5,7 +5,11 @@ services:
     ports:
       - 2368:2368
     environment:
-    database_client: mysql  
+    database_client: mysql
+      database_connection_database=ghost
+      database_connection_host=database
+      
+
 
   database:
     image: mysql:5.7
