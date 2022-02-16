@@ -45,3 +45,12 @@ docker stop site-trybe2
 ```console
 docker rm site-trybe2
 ```
+
+## **Requisito 9**
+
+```console
+cd /home/milene/docker/meu-site
+ls -la
+```
+
+> -rw-rw-r-- 1 milene milene  358 fev 16 17:21 missao_trybe.html
