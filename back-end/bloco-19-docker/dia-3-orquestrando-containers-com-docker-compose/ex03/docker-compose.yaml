@@ -10,7 +10,8 @@ services:
       database_connection_host=database
       database__connection__use=root
       database_connection_password=password
-
+    depends_on:
+      - "database"
 
   database:
     image: mysql:5.7
