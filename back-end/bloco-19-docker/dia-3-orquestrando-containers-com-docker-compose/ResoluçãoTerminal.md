@@ -33,3 +33,9 @@ docker inspect site-trybe2
                 "Propagation": "rprivate"
             }
         ]
+
+## **Requisito 7**
+
+```console
+docker stop site-trybe2
+```
