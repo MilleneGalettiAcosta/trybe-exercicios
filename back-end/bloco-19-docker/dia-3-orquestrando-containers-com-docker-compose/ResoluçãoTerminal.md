@@ -60,3 +60,9 @@ ls -la
 ```console
 docker images
 ```
+
+## **Requisito 11**
+
+```console
+docker rmi -f <ID IMAGE>
+```
