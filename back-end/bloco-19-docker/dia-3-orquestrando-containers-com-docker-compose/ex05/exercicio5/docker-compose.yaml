@@ -6,5 +6,4 @@ services:
     build: ./exercicio5
     ports:
       - 8080:80
-
-  
+        
