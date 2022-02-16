@@ -14,6 +14,8 @@ services:
       - database__connection__user=root
       - database_connection_password=password
       - database_connection_database=ghost
+    networks:
+      - my-network
 
   db:
     image: mysql:5.7
@@ -21,4 +23,6 @@ services:
       - MYSQL_ROOT_PASSWORD=password
     volumes:
       - db-data=/var/lib/mysql
+    networks:
+      - my-network
       
