@@ -9,5 +9,10 @@ docker run -d --name site-trybe2 -p 4545:80 -v "<CAMINHO DO DIRETÃ“RIO ONDE ESTÃ
 
 ## **Requisito 3**
 
-> http://localhost:4545/missao_trybe.html
+> <http://localhost:4545/missao_trybe.html>
 
+## **Requisito 5**
+
+```console
+docker ps
+```
