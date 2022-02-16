@@ -54,3 +54,9 @@ ls -la
 ```
 
 > -rw-rw-r-- 1 milene milene  358 fev 16 17:21 missao_trybe.html
+
+## **Requisito 10**
+
+```console
+docker images
+```
