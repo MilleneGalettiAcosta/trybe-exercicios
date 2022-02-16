@@ -39,3 +39,9 @@ docker inspect site-trybe2
 ```console
 docker stop site-trybe2
 ```
+
+## **Requisito 8**
+
+```console
+docker rm site-trybe2
+```
