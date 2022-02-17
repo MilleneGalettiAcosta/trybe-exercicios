@@ -3,7 +3,6 @@ version: '3'
 services:
 
   frontend:
-    build: ./exercicio5
+    build: /home/milene/docker/exercicio5
     ports:
       - 8080:80
-        
