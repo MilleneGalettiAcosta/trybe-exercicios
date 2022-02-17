@@ -12,6 +12,8 @@ services:
         - db_data:/var/lib/mysql
 
   wordpress:
+    depends_on:
+      - db
     image: wordpress:latestEntry
     ports:
       - "8000:80"
