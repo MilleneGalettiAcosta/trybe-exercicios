@@ -6,4 +6,5 @@ services:
 
   wordpress:
     image: wordpress:latestEntry
-      
+    ports:
+      - "8000:80"  
