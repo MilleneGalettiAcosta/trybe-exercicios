@@ -37,3 +37,19 @@ A restrição aplicada na coluna address é a restrição NOT NULL . Dessa manei
 ### Resposta 2
 
 Isso acontece porque a coluna country_id é apenas uma referência para a sua tabela original, e o número que é exibido nessa tabela representa uma Foreign Key . Caso você queira ver o nome do país, você deve ir até a tabela na qual o country_id é uma Primary Key .
+
+## Tabela 3
+
+![Tabela 3](images/table3.png)
+
+> 1 - Qual coluna possui uma Primary Key ?
+
+### Resposta 1
+
+A coluna film_id possui uma Primary Key .
+
+> 2- Qual coluna possui uma Foreign Key ?
+
+### Resposta 2
+
+A coluna category_id possui uma Foreign Key .
