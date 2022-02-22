@@ -1,4 +1,4 @@
-# Resolução dos exercícios 
+# Resolução dos exercícios
 
 ## Para os exercícios a seguir, vamos usar a tabela sakila.film
 
