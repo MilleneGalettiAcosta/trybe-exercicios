@@ -83,3 +83,43 @@ SELECT DISTINCT Idade FROM Escola.Alunos;
 > 6- Quantas linhas você encontraria na query anterior?
 
 R: 4
+
+## Utilizando COUNT
+
+> 1 -Quantas senhas temos cadastradas nessa tabela?
+
+```console
+SELECT COUNT(password) FROM sakila.staff;
+```
+
+R: 1
+
+> 2- Quantas pessoas temos no total trabalhando para nossa empresa?
+
+```console
+SELECT COUNT(*) FROM sakila.staff;
+```
+
+R: 2
+
+> 3- Quantos emails temos cadastrados nessa tabela?
+
+```console
+SELECT COUNT(email) FROM sakila.staff;
+```
+
+R: 2
+
+## Comando LIMIT e OFFSET - Tabela 1
+
+![tabela 1](table1.png)
+
+*LIMIT* - Limita números de resultados.
+
+*OFFSET* - Pula números de linhas.
+
+> 1- Qual query traz os 10 primeiros resultados, a partir de JOHNNY?
+
+```console
+SELECT * FROM sakila.actor LIMIT 10 OFFSET 5;
+```
