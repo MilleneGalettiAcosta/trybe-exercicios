@@ -51,3 +51,35 @@ SELECT CONCAT(title, ' ', rating) AS Classificação FROM sakila.film;
 ```console
 SELECT CONCAT(address, ' ', district) AS Endereço FROM sakila.address;
 ```
+
+## Utilizando o comando DISTINCT
+
+> 1- Monte uma query para encontrar pares únicos de nomes e idades .
+
+```console
+SELECT DISTINCT Nome, idade FROM Escola.Alunos;
+```
+
+> 2- Quantas linhas você encontraria na query anterior?
+
+R: 5
+
+> 3- Monte uma query para encontrar somente os nomes únicos.
+
+```console
+SELECT DISTINCT Nome FROM Escola.Alunos;
+```
+
+> 4- Quantas linhas você encontraria na query anterior?
+
+R: 4
+
+> 5- Monte uma query para encontrar somente as idades únicas.
+
+```console
+SELECT DISTINCT Idade FROM Escola.Alunos;
+```
+
+> 6- Quantas linhas você encontraria na query anterior?
+
+R: 4
