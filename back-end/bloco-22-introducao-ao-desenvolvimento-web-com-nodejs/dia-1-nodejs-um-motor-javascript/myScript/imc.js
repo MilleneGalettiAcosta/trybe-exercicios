@@ -14,4 +14,4 @@ function calculaIMC () {
 
 calculaIMC();
 
-// No terminal executar node imc.js para resultado
+// No terminal executar npm run imc para resultado
