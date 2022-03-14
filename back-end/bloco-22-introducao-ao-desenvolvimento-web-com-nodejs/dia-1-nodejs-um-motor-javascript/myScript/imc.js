@@ -1,7 +1,7 @@
 const readline = require('readline-sync');
 
 function calculaIMC () { 
-  const peso = readline.questionInt('Qual o seu peso? (em kg)');
+  const peso = readline.questionFloat('Qual o seu peso? (em kg)');
   const altura = readline.questionInt('Qual a sua altura? (em cm)');
 
   console.log(`Péso: ${peso}, Altura: ${altura}`);
@@ -12,6 +12,3 @@ function calculaIMC () {
 }
 
 calculaIMC();
-
-// No terminal executar npm i readline-sync
-// Depois de instalado npm run imc e responder perguntas para resultado
