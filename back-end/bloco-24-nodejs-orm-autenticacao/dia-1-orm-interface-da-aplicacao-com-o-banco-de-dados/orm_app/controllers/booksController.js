@@ -4,7 +4,7 @@ const router = express.Router();
 
 router.get('/', async (_req,res) => {
   try {
-    const books = await Book.findAll();
+    const books = await Book.findAll({ order: [ ['title', 'ASC'], ['createdAt', 'ASC'] ]});
 
     return res.status(200).json(books);
   } catch (err) {
