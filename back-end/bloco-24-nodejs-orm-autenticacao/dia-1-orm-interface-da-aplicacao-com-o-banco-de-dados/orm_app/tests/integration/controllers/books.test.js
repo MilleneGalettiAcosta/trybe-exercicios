@@ -109,6 +109,20 @@ describe('Busca todos os livros', () => {
     after(() => {
       createStub.restore();
     });
-    })
+    it('called Book.create', async () => {
+      expect(Book.create.calledOnce).to.be.equals(true);
+    });
+
+    it('o status é 201', async () => {
+      expect(result.status).to.be.equals(201);
+    });
+
+    it('a resposta é um objeto contendo os dados do livro', async () => {
+      expect(result.body).to.contain(testBook);
+      });
+    });
   });
-})
+
+  
+});
+
