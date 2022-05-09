@@ -6,3 +6,5 @@ enum estacaoDoAno {
 }
 
 console.log(`Estação ${estacaoDoAno.VERÃO}`);
+
+export default estacaoDoAno;

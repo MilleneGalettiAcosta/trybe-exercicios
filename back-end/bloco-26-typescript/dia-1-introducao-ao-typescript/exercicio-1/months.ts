@@ -14,3 +14,5 @@ enum months {
 }
 
 console.log(`Estamos no mês de ${months.MAI}`);
+
+export default months;
